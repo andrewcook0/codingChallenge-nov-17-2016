@@ -28,6 +28,10 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="lT5-AY-9TW"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Is9-Wk-ye0"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -39,8 +43,22 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Photo Collection" id="imh-Ys-gz9">
-                        <barButtonItem key="rightBarButtonItem" title="Help" id="kgx-fT-AaQ"/>
+                        <barButtonItem key="leftBarButtonItem" title="Photos" id="Q6q-Rs-YUO">
+                            <connections>
+                                <action selector="clickedPhotosButton" destination="BYZ-38-t0r" id="KUy-5m-l7R"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Help" id="kgx-fT-AaQ">
+                            <connections>
+                                <action selector="clickedHelpButton" destination="BYZ-38-t0r" id="RpX-1e-Cdx"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="iCI-QC-dHG" id="Wz2-10-oS6"/>
+                        <outlet property="helpButton" destination="kgx-fT-AaQ" id="5p4-Nw-j12"/>
+                        <outlet property="photosButton" destination="Q6q-Rs-YUO" id="Rw9-6k-1Wp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

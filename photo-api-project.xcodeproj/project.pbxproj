@@ -17,6 +17,8 @@
 		491249F11DDE2F3200C834A6 /* APICommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491249F01DDE2F3200C834A6 /* APICommunicator.swift */; };
 		491249F31DDE2FE200C834A6 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491249F21DDE2FE200C834A6 /* PhotoCell.swift */; };
 		491249F51DDE300B00C834A6 /* PhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 491249F41DDE300B00C834A6 /* PhotoCell.xib */; };
+		491249F71DDE326100C834A6 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 491249F61DDE326100C834A6 /* Alamofire.framework */; };
+		491249F91DDE38C500C834A6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491249F81DDE38C500C834A6 /* Extensions.swift */; };
 		83078C3AB3468C99E2F61D76 /* Pods_photo_api_project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2590CCB0581BD5BA374D9B2 /* Pods_photo_api_project.framework */; };
 		941A5B30E957A9FF8A1F0D5E /* Pods_photo_api_projectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85C3811401F86F4E6F18F4A2 /* Pods_photo_api_projectUITests.framework */; };
 		B288BC640EE340B72BAD333E /* Pods_photo_api_projectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1568FC38069B4CD12152EBC4 /* Pods_photo_api_projectTests.framework */; };
@@ -59,6 +61,8 @@
 		491249F01DDE2F3200C834A6 /* APICommunicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APICommunicator.swift; path = ../APICommunicator.swift; sourceTree = "<group>"; };
 		491249F21DDE2FE200C834A6 /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoCell.swift; path = ../PhotoCell.swift; sourceTree = "<group>"; };
 		491249F41DDE300B00C834A6 /* PhotoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PhotoCell.xib; path = ../PhotoCell.xib; sourceTree = "<group>"; };
+		491249F61DDE326100C834A6 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		491249F81DDE38C500C834A6 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = ../Extensions.swift; sourceTree = "<group>"; };
 		658BC96AE780C23391151488 /* Pods-photo-api-projectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-photo-api-projectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-photo-api-projectTests/Pods-photo-api-projectTests.release.xcconfig"; sourceTree = "<group>"; };
 		85C3811401F86F4E6F18F4A2 /* Pods_photo_api_projectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_photo_api_projectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B34D54D2D8428EE937D5BA0 /* Pods-photo-api-project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-photo-api-project.debug.xcconfig"; path = "Pods/Target Support Files/Pods-photo-api-project/Pods-photo-api-project.debug.xcconfig"; sourceTree = "<group>"; };
@@ -72,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				491249F71DDE326100C834A6 /* Alamofire.framework in Frameworks */,
 				83078C3AB3468C99E2F61D76 /* Pods_photo_api_project.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -122,6 +127,7 @@
 			children = (
 				491249F01DDE2F3200C834A6 /* APICommunicator.swift */,
 				491249C21DDE2E6200C834A6 /* AppDelegate.swift */,
+				491249F81DDE38C500C834A6 /* Extensions.swift */,
 				491249F21DDE2FE200C834A6 /* PhotoCell.swift */,
 				491249F41DDE300B00C834A6 /* PhotoCell.xib */,
 				491249C41DDE2E6200C834A6 /* ViewController.swift */,
@@ -167,6 +173,7 @@
 		CF594E0FF957FF9BDBFDB1D4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				491249F61DDE326100C834A6 /* Alamofire.framework */,
 				E2590CCB0581BD5BA374D9B2 /* Pods_photo_api_project.framework */,
 				1568FC38069B4CD12152EBC4 /* Pods_photo_api_projectTests.framework */,
 				85C3811401F86F4E6F18F4A2 /* Pods_photo_api_projectUITests.framework */,
@@ -251,17 +258,20 @@
 					491249BE1DDE2E6200C834A6 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 9SVGXMGU4M;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					491249D21DDE2E6300C834A6 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 9SVGXMGU4M;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 491249BE1DDE2E6200C834A6;
 					};
 					491249DD1DDE2E6300C834A6 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 9SVGXMGU4M;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 491249BE1DDE2E6200C834A6;
 					};
@@ -443,6 +453,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				491249F91DDE38C500C834A6 /* Extensions.swift in Sources */,
 				491249F31DDE2FE200C834A6 /* PhotoCell.swift in Sources */,
 				491249C51DDE2E6200C834A6 /* ViewController.swift in Sources */,
 				491249C31DDE2E6200C834A6 /* AppDelegate.swift in Sources */,
@@ -598,6 +609,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9SVGXMGU4M;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Alamofire",
+				);
 				INFOPLIST_FILE = "photo-api-project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.andrew.cook.photo-api-project";
@@ -612,6 +627,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9SVGXMGU4M;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Alamofire",
+				);
 				INFOPLIST_FILE = "photo-api-project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.andrew.cook.photo-api-project";

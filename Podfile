@@ -6,6 +6,8 @@ target 'photo-api-project' do
   use_frameworks!
 
   # Pods for photo-api-project
+      pod 'Alamofire', '~> 4.0'
+
 
   target 'photo-api-projectTests' do
     inherit! :search_paths
